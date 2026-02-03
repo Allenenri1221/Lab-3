@@ -6,10 +6,10 @@ int main() {
     int scores[SIZE];
 
     cout << "Teacher Score Analyzer\n";
-    cout << "Enter the scores (0-99 for " << SIZE << " students:\n";
+    cout << "Enter the scores (0-99) for " << SIZE << " students:\n";
 
     // Input scores
-    for (int i = 0; i < SiZE; ++i) {
+    for (int i = 0; i < SIZE; ++i) {
         cout << "Student " << i + 1 << " score: ";
         cin >> scores[i];
         while (scores[i] < 0 || scores[i] > 99) {
@@ -20,8 +20,8 @@ int main() {
 
     int sum = 0;
     int passCount = 0;
-    int lowest = score[0];
-    int highest = score[0];
+    int lowest = scores[0];
+    int highest = scores[0];
 
     // Process scores
     for (int i = 0; i < SIZE; ++i) {
